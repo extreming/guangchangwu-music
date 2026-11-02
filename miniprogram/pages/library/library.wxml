@@ -1,0 +1,33 @@
+<view class="page" style="padding-bottom: calc(180rpx + {{safeBottom}}px);">
+  <view class="title">我的音乐</view>
+  <view class="sub">点一首就能听。重复播放适合练舞。</view>
+
+  <view class="empty" wx:if="{{songs.length === 0}}">
+    <view class="empty-title">还没有音乐</view>
+    <view class="empty-text">请到「提取」页面，粘贴抖音或快手的分享链接。</view>
+    <button class="btn-main" hover-class="btn-hover" bindtap="goIndex">去提取</button>
+  </view>
+
+  <view
+    class="song {{item.playing ? 'playing' : ''}}"
+    wx:for="{{songs}}"
+    wx:key="id"
+    data-id="{{item.id}}"
+    bindtap="openSong"
+  >
+    <view class="song-flag" wx:if="{{item.playing}}">正在播放</view>
+    <view class="song-title">{{item.title}}</view>
+    <view class="song-meta">{{item.meta}}</view>
+    <view class="song-go">点这里播放</view>
+  </view>
+
+  <view class="keep" wx:if="{{songs.length > 0}}">
+    这些音乐存在这个小程序里。请不要在微信里删除小程序，否则音乐会一起消失。想另外留一份，打开歌曲后点「看图：存到手机」。
+  </view>
+  <view class="copyright">仅供个人练舞收听，版权归原作者。</view>
+</view>
+
+<view class="nav" style="padding-bottom: {{safeBottom}}px;">
+  <view class="nav-item" bindtap="goIndex">提取</view>
+  <view class="nav-item on">我的音乐</view>
+</view>

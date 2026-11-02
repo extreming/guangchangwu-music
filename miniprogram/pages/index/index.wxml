@@ -1,0 +1,53 @@
+<view class="page" style="padding-bottom: calc(160rpx + {{safeBottom}}px);">
+  <view class="title">广场舞音乐</view>
+  <view class="sub">把抖音、快手里的舞曲存下来，打开就能反复跳。</view>
+
+  <view class="howto">
+    <view class="howto-line">1. 打开抖音或快手，找到要跳的舞</view>
+    <view class="howto-line">2. 点「分享」，再点「复制链接」</view>
+    <view class="howto-line">3. 回到这里，点下面的绿色按钮</view>
+  </view>
+
+  <button class="btn-main" hover-class="btn-hover" bindtap="onPaste">粘贴链接</button>
+  <button class="btn-main" hover-class="btn-hover" bindtap="onExtract">{{busy ? '正在提取，请稍等' : '提取音乐'}}</button>
+
+  <view class="status status-{{statusType}}" wx:if="{{statusText}}">{{statusText}}</view>
+
+  <view class="box-wrap" wx:if="{{showBox}}">
+    <view class="box-label">链接在这里。可以长按粘贴，也可以改一改。</view>
+    <textarea
+      class="box"
+      value="{{text}}"
+      maxlength="2000"
+      placeholder="长按这里，选择粘贴"
+      placeholder-class="ph"
+      bindinput="onInput"
+      adjust-position="{{true}}"
+      show-confirm-bar="{{false}}"
+      cursor-spacing="160"
+    />
+  </view>
+  <button class="text-btn" wx:if="{{!showBox}}" hover-class="btn-hover" bindtap="showEditor">字贴错了？点这里自己粘贴</button>
+
+  <view class="now" wx:if="{{showNow}}" bindtap="openNow">
+    <view class="now-label">{{nowLabel}}</view>
+    <view class="now-title">{{nowTitle}}</view>
+  </view>
+
+  <view class="devhint" wx:if="{{devHint}}">试用提示：现在连的是电脑。只有微信开发者工具里能提取。手机上要用，需要先把服务器放到网上。</view>
+
+  <view class="section">不会复制链接？看这三步图</view>
+  <view class="figure-title">第1步  在抖音或快手点「分享」</view>
+  <image class="figure" src="/images/flow/share.png" mode="widthFix" />
+  <view class="figure-title">第2步  点「复制链接」</view>
+  <image class="figure" src="/images/flow/copy.png" mode="widthFix" />
+  <view class="figure-title">第3步  回到这里，点「粘贴链接」</view>
+  <image class="figure" src="/images/flow/paste.png" mode="widthFix" />
+
+  <view class="copyright">仅供个人练舞收听。音乐版权归原作者，请不要拿去卖或公开转发。</view>
+</view>
+
+<view class="nav" style="padding-bottom: {{safeBottom}}px;">
+  <view class="nav-item on">提取</view>
+  <view class="nav-item" bindtap="goLibrary">我的音乐</view>
+</view>

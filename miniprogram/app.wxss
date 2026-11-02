@@ -1,0 +1,94 @@
+page {
+  background: #FFF6EA;
+  color: #1A1A1A;
+  font-size: 40rpx;
+  line-height: 1.45;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+view, text, button {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0 24rpx;
+  font-weight: 700;
+  border-radius: 28rpx;
+  text-align: center;
+}
+
+button::after {
+  border: none;
+}
+
+.btn-main {
+  width: 100%;
+  height: 168rpx;
+  line-height: 168rpx;
+  background: #064E3B;
+  color: #FFFFFF;
+  font-size: 52rpx;
+  margin-top: 24rpx;
+}
+
+.btn-sub {
+  width: 100%;
+  height: 132rpx;
+  line-height: 132rpx;
+  background: #FFFFFF;
+  color: #064E3B;
+  border: 6rpx solid #064E3B;
+  font-size: 42rpx;
+  margin-top: 20rpx;
+}
+
+.btn-danger {
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #FFFFFF;
+  color: #7F1D1D;
+  border: 6rpx solid #7F1D1D;
+  font-size: 40rpx;
+  margin-top: 28rpx;
+}
+
+.btn-hover {
+  opacity: 0.82;
+}
+
+.copyright {
+  margin: 36rpx 8rpx 12rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #1A1A1A;
+  line-height: 1.45;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  background: #FFFFFF;
+  border-top: 6rpx solid #064E3B;
+}
+
+.nav-item {
+  flex: 1;
+  height: 124rpx;
+  line-height: 124rpx;
+  text-align: center;
+  font-size: 44rpx;
+  font-weight: 700;
+  color: #064E3B;
+  background: #FFFFFF;
+}
+
+.nav-item.on {
+  background: #064E3B;
+  color: #FFFFFF;
+}

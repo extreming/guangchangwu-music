@@ -1,0 +1,79 @@
+.page {
+  padding: 28rpx 32rpx 48rpx;
+}
+
+.banner {
+  background: #E5F6EC;
+  color: #064E3B;
+  border-radius: 24rpx;
+  padding: 28rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 24rpx;
+}
+
+.kicker {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 12rpx;
+  font-size: 60rpx;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #064E3B;
+}
+
+.time {
+  margin-top: 12rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.play {
+  width: 460rpx;
+  height: 460rpx;
+  line-height: 460rpx;
+  border-radius: 230rpx;
+  background: #064E3B;
+  color: #FFFFFF;
+  font-size: 72rpx;
+  font-weight: 700;
+  margin: 36rpx auto 12rpx;
+  padding: 0;
+}
+
+.loop {
+  width: 100%;
+  height: 140rpx;
+  line-height: 140rpx;
+  margin-top: 12rpx;
+  background: #FFFFFF;
+  color: #064E3B;
+  border: 6rpx solid #064E3B;
+  font-size: 46rpx;
+}
+
+.loop.on {
+  background: #064E3B;
+  color: #FFFFFF;
+}
+
+.help {
+  margin-top: 16rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.status {
+  margin-top: 24rpx;
+  background: #FFF3C4;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}

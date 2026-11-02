@@ -1,0 +1,143 @@
+.page {
+  padding: 36rpx 32rpx 0;
+}
+
+.title {
+  font-size: 72rpx;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #064E3B;
+}
+
+.sub {
+  margin-top: 16rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.howto {
+  margin-top: 28rpx;
+  background: #FFFFFF;
+  border: 6rpx solid #064E3B;
+  border-radius: 28rpx;
+  padding: 24rpx 28rpx;
+}
+
+.howto-line {
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-top: 8rpx;
+}
+
+.status {
+  margin-top: 28rpx;
+  padding: 28rpx;
+  border-radius: 24rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.status-ok {
+  background: #E5F6EC;
+  color: #064E3B;
+}
+
+.status-error {
+  background: #FDE8E8;
+  color: #7F1D1D;
+}
+
+.status-info {
+  background: #E7F0FA;
+  color: #0B3A6E;
+}
+
+.box-wrap {
+  margin-top: 28rpx;
+}
+
+.box-label {
+  font-size: 40rpx;
+  font-weight: 700;
+  margin-bottom: 12rpx;
+}
+
+.box {
+  width: 100%;
+  min-height: 220rpx;
+  background: #FFFFFF;
+  border: 6rpx solid #064E3B;
+  border-radius: 24rpx;
+  padding: 20rpx;
+  font-size: 40rpx;
+  line-height: 1.45;
+  color: #1A1A1A;
+}
+
+.ph {
+  color: #5C5346;
+  font-size: 40rpx;
+}
+
+.text-btn {
+  margin-top: 16rpx;
+  width: 100%;
+  height: 108rpx;
+  line-height: 108rpx;
+  background: transparent;
+  color: #064E3B;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.now {
+  margin-top: 28rpx;
+  background: #064E3B;
+  color: #FFFFFF;
+  border-radius: 28rpx;
+  padding: 28rpx;
+}
+
+.now-label {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.now-title {
+  margin-top: 8rpx;
+  font-size: 48rpx;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.devhint {
+  margin-top: 28rpx;
+  background: #FFF3C4;
+  color: #1A1A1A;
+  font-size: 36rpx;
+  font-weight: 700;
+  padding: 24rpx;
+  border-radius: 20rpx;
+  line-height: 1.45;
+}
+
+.section {
+  margin-top: 48rpx;
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.figure-title {
+  margin-top: 28rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+
+.figure {
+  width: 100%;
+  margin-top: 12rpx;
+  border-radius: 24rpx;
+}

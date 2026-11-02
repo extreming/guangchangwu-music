@@ -1,0 +1,92 @@
+.page {
+  padding: 32rpx 32rpx 48rpx;
+}
+
+.lead {
+  background: #E5F6EC;
+  color: #064E3B;
+  border-radius: 24rpx;
+  padding: 28rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.lead2 {
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.phones {
+  display: flex;
+  margin-top: 28rpx;
+}
+
+.phone {
+  flex: 1;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin-right: 16rpx;
+  background: #FFFFFF;
+  color: #064E3B;
+  border: 6rpx solid #064E3B;
+  font-size: 40rpx;
+}
+
+.phone:last-child {
+  margin-right: 0;
+}
+
+.phone.on {
+  background: #064E3B;
+  color: #FFFFFF;
+}
+
+.phone-note {
+  margin-top: 16rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.step {
+  margin-top: 36rpx;
+}
+
+.step-no {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #064E3B;
+}
+
+.step-text {
+  margin-top: 8rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.step-img {
+  width: 100%;
+  margin-top: 16rpx;
+  border-radius: 24rpx;
+}
+
+.status {
+  margin-top: 20rpx;
+  background: #FFF3C4;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.help {
+  margin-top: 16rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}

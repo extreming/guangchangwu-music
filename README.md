@@ -2,6 +2,8 @@
 
 给家里老人用的微信小程序：从抖音、快手、抖音火山版的分享文字里取出舞曲，存进小程序的「我的音乐」，用很大的按钮播放，并且可以单曲循环，方便反复练舞。
 
+本项目以 [MIT License](LICENSE) 开源，版权所有 (c) 2026 extreming。
+
 文件名用视频标题整理后的名字，例如 `夕阳红广场舞.mp3`，转发出去也好认。
 
 ## 老人怎么用
@@ -178,3 +180,7 @@ docker compose up --build
 - `GET /api/files/{id}` → `audio/mpeg`，`Content-Disposition` 使用整理后的文件名
 
 失败时 HTTP 状态和正文里的 `error` 都是给用户看的简短中文，例如「没有找到链接」「这首太长了」「操作太频繁」。
+
+## 许可证
+
+[MIT License](LICENSE)。Copyright (c) 2026 extreming.

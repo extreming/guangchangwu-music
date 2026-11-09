@@ -1,0 +1,30 @@
+<view class="page" style="padding-bottom: {{safeBottom}}px;">
+  <view class="banner" wx:if="{{fresh && !missing}}">已经放进「我的音乐」。点下面的大按钮就能听。</view>
+
+  <view wx:if="{{missing}}">
+    <view class="title">这首音乐找不到了</view>
+    <view class="help">可能被清理掉了。请重新粘贴链接，再提取一次。</view>
+    <button class="btn-main" hover-class="btn-hover" bindtap="goIndex">去提取</button>
+    <button class="btn-danger" hover-class="btn-hover" bindtap="onDelete">从列表里去掉</button>
+  </view>
+
+  <block wx:if="{{track && !missing}}">
+    <view class="kicker">存在「我的音乐」里<text wx:if="{{track.platformLabel}}"> · 来自{{track.platformLabel}}</text></view>
+    <view class="title">{{track.title}}</view>
+    <view class="time" wx:if="{{timeText}}">{{timeText}}</view>
+
+    <button class="play" hover-class="btn-hover" bindtap="onToggle">{{playLabel}}</button>
+
+    <button class="loop {{loopOn ? 'on' : ''}}" hover-class="btn-hover" bindtap="onLoop">{{loopText}}</button>
+    <view class="help">{{loopHelp}}</view>
+    <view class="help">{{hint}}</view>
+
+    <button class="btn-sub" hover-class="btn-hover" bindtap="onShare">发给文件传输助手</button>
+    <button class="btn-sub" hover-class="btn-hover" bindtap="onGuide">看图：存到手机</button>
+    <button class="btn-sub" hover-class="btn-hover" bindtap="goLibrary">回到我的音乐</button>
+    <button class="btn-danger" hover-class="btn-hover" bindtap="onDelete">删除这首</button>
+    <view class="status" wx:if="{{statusText}}">{{statusText}}</view>
+  </block>
+
+  <view class="copyright">仅供个人练舞收听，版权归原作者。</view>
+</view>

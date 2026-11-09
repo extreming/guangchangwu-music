@@ -1,0 +1,30 @@
+<view class="page" style="padding-bottom: {{safeBottom}}px;">
+  <view class="lead">练舞不用做这些。在「我的音乐」里点播放就行，还可以重复。</view>
+  <view class="lead2">如果还想把音乐放进手机文件夹，按下面的图做。图是示意图，按钮名字和手机上一样。</view>
+
+  <view class="phones">
+    <button class="phone {{phone === 'android' ? 'on' : ''}}" data-phone="android" bindtap="setPhone" hover-class="btn-hover">安卓手机</button>
+    <button class="phone {{phone === 'ios' ? 'on' : ''}}" data-phone="ios" bindtap="setPhone" hover-class="btn-hover">苹果手机</button>
+  </view>
+  <view class="phone-note">{{phoneNote}}</view>
+
+  <button class="btn-main" wx:if="{{canShare}}" hover-class="btn-hover" bindtap="onShare">发给文件传输助手</button>
+  <view class="status" wx:if="{{statusText}}">{{statusText}}</view>
+
+  <view class="step" wx:for="{{steps}}" wx:key="n">
+    <view class="step-no">第{{item.n}}步</view>
+    <view class="step-text">{{item.text}}</view>
+    <image class="step-img" src="{{item.img}}" mode="widthFix" />
+  </view>
+
+  <view class="step">
+    <view class="step-no">如果发不出去</view>
+    <view class="step-text">点下面复制链接。打开手机自带的浏览器，在最上面的地址栏长按，选择粘贴，打开后再点下载。</view>
+    <image class="step-img" src="/images/guide/browser.png" mode="widthFix" />
+    <button class="btn-sub" wx:if="{{link}}" hover-class="btn-hover" bindtap="onCopy">复制下载链接</button>
+    <view class="help" wx:if="{{!link}}">这首没有可用的下载链接了。请回到提取，重新提取一次，马上再来复制。</view>
+  </view>
+
+  <button class="btn-sub" hover-class="btn-hover" bindtap="goBack">返回</button>
+  <view class="copyright">仅供个人练舞收听，版权归原作者。</view>
+</view>

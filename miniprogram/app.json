@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/library/library",
+    "pages/player/player",
+    "pages/guide/guide"
+  ],
+  "window": {
+    "navigationBarTitleText": "广场舞音乐",
+    "navigationBarBackgroundColor": "#064E3B",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FFF6EA",
+    "backgroundTextStyle": "dark",
+    "backgroundColorTop": "#064E3B",
+    "backgroundColorBottom": "#FFF6EA"
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 60000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio"]
+}

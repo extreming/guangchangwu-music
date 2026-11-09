@@ -1,0 +1,18 @@
+services:
+  api:
+    build: ./backend
+    ports:
+      - "8765:8765"
+    environment:
+      PUBLIC_BASE_URL: http://127.0.0.1:8765
+      DATA_DIR: /data
+      FILE_TTL_SECONDS: "7200"
+      MAX_DOWNLOAD_MB: "100"
+      MAX_DURATION_SECONDS: "1200"
+      RATE_LIMIT_PER_MINUTE: "10"
+    volumes:
+      - audio-data:/data
+    restart: unless-stopped
+
+volumes:
+  audio-data:
